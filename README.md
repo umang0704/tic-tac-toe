@@ -12,6 +12,5 @@ Tic Tac Toe - Java
 7. Replay Game.
 ```
 ### Class Diagram
-![Tic Tag Toe.svg](src/main/resources/Tic Tag Toe.svg)
 
-
+![Tic Tag Toe.svg](https://github.com/umang0704/tic-tac-toe/blob/f1d71dab960acf3e3cfe5ad56c95a58166ca858c/src/main/resources/Tic%20Tag%20Toe.svg)
