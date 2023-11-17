@@ -2,7 +2,7 @@ package org.tictactoe.model;
 
 import lombok.Data;
 import org.tictactoe.exception.InvalidGameParamException;
-import org.tictactoe.strategies.WinningStrategy;
+import org.tictactoe.design.strategies.winningstrategies.WinningStrategy;
 
 import java.util.ArrayList;
 import java.util.HashSet;

@@ -3,11 +3,9 @@ package org.tictactoe.controller;
 import org.tictactoe.exception.InvalidGameParamException;
 import org.tictactoe.model.Game;
 import org.tictactoe.model.GameStatus;
-import org.tictactoe.model.Move;
 import org.tictactoe.model.Player;
-import org.tictactoe.strategies.WinningStrategy;
+import org.tictactoe.design.strategies.winningstrategies.WinningStrategy;
 
-import java.util.Collections;
 import java.util.List;
 
 public class GameController {

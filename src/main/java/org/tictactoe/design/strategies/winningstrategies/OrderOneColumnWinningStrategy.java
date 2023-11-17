@@ -1,4 +1,4 @@
-package org.tictactoe.strategies;
+package org.tictactoe.design.strategies.winningstrategies;
 
 import org.tictactoe.model.Board;
 import org.tictactoe.model.Move;
@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-public class OrderOneColumnWinningStrategy implements WinningStrategy{
+public class OrderOneColumnWinningStrategy implements WinningStrategy {
     private final List<HashMap<Symbol,Integer>> columnMap;
 
     public OrderOneColumnWinningStrategy(int size,List<Player> players) {

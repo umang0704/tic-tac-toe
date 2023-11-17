@@ -3,10 +3,10 @@ package org.tictactoe;
 import org.tictactoe.controller.GameController;
 import org.tictactoe.exception.InvalidGameParamException;
 import org.tictactoe.model.*;
-import org.tictactoe.strategies.OrderDiagonalColumnWinningStrategy;
-import org.tictactoe.strategies.OrderOneColumnWinningStrategy;
-import org.tictactoe.strategies.OrderRowColumnWinningStrategy;
-import org.tictactoe.strategies.WinningStrategy;
+import org.tictactoe.design.strategies.winningstrategies.OrderDiagonalColumnWinningStrategy;
+import org.tictactoe.design.strategies.winningstrategies.OrderOneColumnWinningStrategy;
+import org.tictactoe.design.strategies.winningstrategies.OrderRowColumnWinningStrategy;
+import org.tictactoe.design.strategies.winningstrategies.WinningStrategy;
 
 import java.util.Arrays;
 import java.util.List;

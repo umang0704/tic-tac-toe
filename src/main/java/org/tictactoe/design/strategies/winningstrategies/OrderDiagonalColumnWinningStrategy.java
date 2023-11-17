@@ -1,4 +1,4 @@
-package org.tictactoe.strategies;
+package org.tictactoe.design.strategies.winningstrategies;
 
 import org.tictactoe.model.*;
 
