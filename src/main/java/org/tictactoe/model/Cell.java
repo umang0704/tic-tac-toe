@@ -1,5 +1,8 @@
 package org.tictactoe.model;
 
+import lombok.Data;
+
+@Data
 public class Cell {
     private int row;
     private int col;
@@ -12,35 +15,11 @@ public class Cell {
         this.cellStatus = CellStatus.EMPTY;
     }
 
-    public int getRow() {
-        return row;
-    }
-
-    public void setRow(int row) {
-        this.row = row;
-    }
-
-    public int getCol() {
-        return col;
-    }
-
-    public void setCol(int col) {
-        this.col = col;
-    }
-
-    public Player getPlayer() {
-        return player;
-    }
-
-    public void setPlayer(Player player) {
-        this.player = player;
-    }
-
-    public CellStatus getCellStatus() {
-        return cellStatus;
-    }
-
-    public void setCellStatus(CellStatus cellStatus) {
-        this.cellStatus = cellStatus;
+    public void display() {
+        if(this.cellStatus.equals(CellStatus.EMPTY)){
+            System.out.printf(" - |");
+        }else{
+            System.out.printf(" "+this.player.getSymbol()+" |");
+        }
     }
 }

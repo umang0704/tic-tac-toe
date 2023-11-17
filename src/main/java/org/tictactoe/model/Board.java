@@ -1,8 +1,10 @@
 package org.tictactoe.model;
 
+import lombok.Data;
+
 import java.util.ArrayList;
 import java.util.List;
-
+@Data
 public class Board {
     private int size;
     private List<List<Cell>> grid;
@@ -18,19 +20,11 @@ public class Board {
         }
     }
 
-    public int getSize() {
-        return size;
-    }
-
-    public void setSize(int size) {
-        this.size = size;
-    }
-
-    public List<List<Cell>> getGrid() {
-        return grid;
-    }
-
-    public void setGrid(List<List<Cell>> grid) {
-        this.grid = grid;
+    public void printBoard() {
+        for(List<Cell> row : grid){
+            System.out.printf("|");
+            for(Cell cell : row ) cell.display();
+            System.out.println();
+        }
     }
 }

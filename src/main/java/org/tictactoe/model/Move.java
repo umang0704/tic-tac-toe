@@ -1,22 +1,15 @@
 package org.tictactoe.model;
 
+import lombok.Data;
+import lombok.Getter;
+
+@Data
 public class Move {
     private Player player;
-    private Move move;
+    private Cell cell;
 
-    public Player getPlayer() {
-        return player;
-    }
-
-    public void setPlayer(Player player) {
+    public Move(Player player, Cell cell) {
         this.player = player;
-    }
-
-    public Move getMove() {
-        return move;
-    }
-
-    public void setMove(Move move) {
-        this.move = move;
+        this.cell = cell;
     }
 }
